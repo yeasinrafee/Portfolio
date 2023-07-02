@@ -8,10 +8,10 @@ import { SectionWrapper } from "../HigherOrderComponent";
 
 const ServiceCard = ({ index, title, icon }) => {
   return (
-    <Tilt className="xs:w-[250px] w-full">
+    <Tilt className="xs:w-[250px] w-full mx-auto">
       <motion.div
         variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
-        className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card"
+        className="w-full red-yellow-gradient p-[1px] rounded-[20px] shadow-card"
       >
         <div
           options={{
@@ -35,7 +35,7 @@ const About = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>introduction</p>
+        <p className={`${styles.sectionSubText} text-red-500`}>introduction</p>
         <h2 className={styles.sectionHeadText}>About Me</h2>
       </motion.div>
 
