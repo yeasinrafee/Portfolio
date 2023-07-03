@@ -6,7 +6,6 @@ import { github } from "../assets";
 import { SectionWrapper } from "../HigherOrderComponent";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utilities/motion";
-import { Link } from "react-router-dom";
 
 const ProjectCard = ({
   index,
