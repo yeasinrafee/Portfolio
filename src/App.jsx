@@ -3,13 +3,11 @@ import "./App.css";
 import {
   About,
   Contact,
-  Experience,
   Feedbacks,
   Hero,
   Navbar,
   Tech,
   Works,
-  StarsCanvas,
 } from "./components";
 
 function App() {
@@ -25,7 +23,6 @@ function App() {
       <Feedbacks />
       <div className="relative z-0">
         <Contact />
-        <StarsCanvas />
       </div>
     </div>
   );

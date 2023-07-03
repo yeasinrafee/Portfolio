@@ -6,18 +6,59 @@ import { SectionWrapper } from "../HigherOrderComponent";
 import { slideIn } from "../utilities/motion";
 import { useRef, useState } from "react";
 
+//template_t19x7n9
+//service_7nvkacq
+//loSQd0pU1P8C6xMU4
+
 const Contact = () => {
   const formRef = useRef();
-  const [from, setForm] = useState({
+  const [form, setForm] = useState({
     name: "",
     email: "",
     message: "",
   });
   const [loading, setLoading] = useState(false);
 
-  const handleChange = (e) => {};
+  const handleChange = (e) => {
+    const { name, value } = e.target;
 
-  const handleSubmit = (e) => {};
+    setForm({ ...form, [name]: value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setLoading(true);
+
+    emailjs
+      .send(
+        "service_7nvkacq",
+        "template_t19x7n9",
+        {
+          from_name: form.name,
+          to_name: "Yeasin Rafi",
+          from_email: form.email,
+          to_email: "yeasinrfi808@gmail.com",
+          message: form.message,
+        },
+        "loSQd0pU1P8C6xMU4"
+      )
+      .then(
+        () => {
+          setLoading(false);
+          alert("Thanks for your feedback.");
+
+          setForm({
+            name: "",
+            email: "",
+            message: "",
+          });
+        },
+        (error) => {
+          setLoading(false);
+          console.log(error);
+        }
+      );
+  };
 
   return (
     <div className="xl:mt-12 overflow-hidden">
@@ -27,7 +68,7 @@ const Contact = () => {
       >
         <p className={`${styles.sectionSubText} text-red-500`}>Contact</p>
         <h2 className={styles.sectionHeadText}>Leave a Comment</h2>
-        <from
+        <form
           ref={formRef}
           onSubmit={handleSubmit}
           className="mt-12 flex flex-col gap-8"
@@ -37,7 +78,7 @@ const Contact = () => {
             <input
               type="text"
               name="name"
-              value={from.name}
+              value={form.name}
               onChange={handleChange}
               placeholder="Your name"
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
@@ -48,7 +89,7 @@ const Contact = () => {
             <input
               type="email"
               name="email"
-              value={from.email}
+              value={form.email}
               onChange={handleChange}
               placeholder="Your email"
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
@@ -58,8 +99,8 @@ const Contact = () => {
             <span className="text-white font-medium mb-4">Message:</span>
             <textarea
               rows="7"
-              name="name"
-              value={from.message}
+              name="message"
+              value={form.message}
               onChange={handleChange}
               placeholder="Your message"
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
@@ -72,7 +113,7 @@ const Contact = () => {
           >
             {loading ? "Sending..." : "Send"}
           </button>
-        </from>
+        </form>
       </motion.div>
     </div>
   );
