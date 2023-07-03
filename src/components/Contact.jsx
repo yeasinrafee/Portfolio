@@ -6,10 +6,6 @@ import { SectionWrapper } from "../HigherOrderComponent";
 import { slideIn } from "../utilities/motion";
 import { useRef, useState } from "react";
 
-//template_t19x7n9
-//service_7nvkacq
-//loSQd0pU1P8C6xMU4
-
 const Contact = () => {
   const formRef = useRef();
   const [form, setForm] = useState({

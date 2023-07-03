@@ -3,7 +3,7 @@ import { technologies } from "../constants";
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
-import { fadeIn, textVariant } from "../utilities/motion";
+import { textVariant } from "../utilities/motion";
 import { SectionWrapper } from "../HigherOrderComponent";
 
 const Tech = () => {
