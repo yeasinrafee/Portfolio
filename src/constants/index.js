@@ -117,27 +117,30 @@ const technologies = [
 const testimonials = [
   {
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
+      "A hidden gem of gastronomy brought to life through a meticulously crafted website, showcasing the essence of our restaurant's culinary excellence.",
+    name: "Ada Morris",
+    designation: "Owner",
+    company: "Hungry Chef",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnS1o3mO3S_Nkfw1WAGaRJ6KaOGgODpfoOsA&usqp=CAU",
   },
   {
     testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
+      "We celebrate the whimsical wonderland you've created through your exceptional toy-selling website. Thank you for making childhood dreams a reality!",
     name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
+    designation: "CEO",
+    company: "Kidd Toy",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtYklqWX1v2p2Q5z1JfpDjb7_xjFQjJb3If53FxhclZR6RerZlKBas9RPYSqc-jvgBZLg&usqp=CAU",
   },
   {
     testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
+      "I highly recommend their website-building services to anyone in need of a professional, reliable, and innovative partner. You should give a try.Thanks for developers service.",
+    name: "Andres Martial",
     designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
+    company: "Elite Fight Club",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXARSmOhxqiC4-LQ_PYl4yiXmzo-HT_h9yCatSk_wqHvQvdBfSX-RPhdlaTNkUR5Yb_34&usqp=CAU",
   },
 ];
 
