@@ -6,6 +6,7 @@ import { github } from "../assets";
 import { SectionWrapper } from "../HigherOrderComponent";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utilities/motion";
+import { Link } from "react-router-dom";
 
 const ProjectCard = ({
   index,
@@ -53,6 +54,14 @@ const ProjectCard = ({
                 {tag.name}
               </p>
             ))}
+          </div>
+          <div className="mt-4 border border-2 w-2/5 px-3 py-2 rounded-md cursor-pointer hover:border-none hover:bg-red-500">
+            <a
+              href="https://www.youtube.com/watch?v=0fYi8SGA20k&t=1697s"
+              target="_blank"
+            >
+              Live Website
+            </a>
           </div>
         </div>
       </Tilt>

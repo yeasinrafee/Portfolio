@@ -23,7 +23,7 @@ const Hero = () => {
         <ComputersCanvas />
       </div>
       <div className="absolute xs:bottom-10 bottom-36 w-full flex justify-center items-center">
-        <div className="w-[78px] h-[48px] rounded-2xl border-4 border-[#bb3a3a] flex justify-center items-start px-16 py-2 cursor-pointer hover:bg-[#dd3232] hover:border-black">
+        <div className="w-[78px] h-[48px] rounded-2xl border-4 border-3 flex justify-center items-start px-16 py-2 cursor-pointer hover:bg-[#dd3232] hover:border-black font-bold">
           ⬇️Resume
         </div>
       </div>
