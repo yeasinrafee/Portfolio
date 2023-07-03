@@ -54,7 +54,7 @@ const ProjectCard = ({
               </p>
             ))}
           </div>
-          <div className="mt-4 border border-2 w-2/5 px-3 py-2 rounded-md cursor-pointer hover:border-none hover:bg-red-500">
+          <div className="mt-4 border border-2 text-sm md:text-md w-2/5 px-3 py-2 rounded-md cursor-pointer hover:border-none hover:bg-red-500">
             <a
               href="https://www.youtube.com/watch?v=0fYi8SGA20k&t=1697s"
               target="_blank"
