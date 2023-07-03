@@ -21,9 +21,9 @@ import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import hungryChef from "./hungrychef.png";
+import kiddToy from "./kiddToy.png";
+import eliteFightClub from "./eliteFightClub.png";
 
 export {
   logo,
@@ -47,7 +47,7 @@ export {
   tailwind,
   typescript,
   threejs,
-  carrent,
-  jobit,
-  tripguide,
+  hungryChef,
+  kiddToy,
+  eliteFightClub,
 };

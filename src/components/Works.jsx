@@ -14,6 +14,7 @@ const ProjectCard = ({
   tags,
   image,
   source_code_link,
+  live_link,
 }) => {
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
@@ -55,10 +56,7 @@ const ProjectCard = ({
             ))}
           </div>
           <div className="mt-4 border border-2 text-sm md:text-md w-2/5 px-3 py-2 rounded-md cursor-pointer hover:border-none hover:bg-red-500">
-            <a
-              href="https://www.youtube.com/watch?v=0fYi8SGA20k&t=1697s"
-              target="_blank"
-            >
+            <a href={live_link} target="_blank">
               Live Website
             </a>
           </div>
@@ -81,10 +79,13 @@ const Works = () => {
           variants={fadeIn("", "", 0.1, 1)}
           className="mt-3 text-secondary text-[17px] mx-w-3xl leading-[30px]"
         >
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis
-          libero ducimus dolorum, nostrum molestias sed nam optio repudiandae
-          dolores aperiam, quod excepturi. Velit quo, ullam iure laboriosam
-          recusandae minima in.
+          In these projects, I utilized a stack comprising React, Node.js,
+          Express, MongoDB, Firebase, and Tailwind to build three distinct
+          applications. These projects demonstrate my ability to build robust,
+          responsive, and secure applications using the latest web technologies.
+          The third project involved developing a scalable platform with
+          features like user authentication, real-time updates, and secure
+          payment integration.
         </motion.p>
       </div>
 

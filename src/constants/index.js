@@ -4,7 +4,6 @@ import {
   creator,
   web,
   javascript,
-  typescript,
   html,
   css,
   reactjs,
@@ -14,10 +13,9 @@ import {
   mongodb,
   git,
   figma,
-  docker,
-  carrent,
-  jobit,
-  tripguide,
+  hungryChef,
+  kiddToy,
+  eliteFightClub,
   threejs,
 } from "../assets";
 
@@ -53,10 +51,6 @@ const services = [
     title: "Social Media Marketer",
     icon: creator,
   },
-  {
-    title: "Bug Fixer",
-    icon: mobile,
-  },
 ];
 
 const technologies = [
@@ -71,10 +65,6 @@ const technologies = [
   {
     name: "JavaScript",
     icon: javascript,
-  },
-  {
-    name: "TypeScript",
-    icon: typescript,
   },
   {
     name: "React JS",
@@ -107,10 +97,6 @@ const technologies = [
   {
     name: "figma",
     icon: figma,
-  },
-  {
-    name: "docker",
-    icon: docker,
   },
 ];
 
@@ -146,9 +132,31 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "HungyChef",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Single Page Application. Dynamic Website, Email Password Authentication, Google/Github Authentication. Getting Italian Chefs and their top 3 recipes, Using Animation on UI.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "green-text-gradient",
+      },
+      {
+        name: "firebase",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: hungryChef,
+    source_code_link: "https://github.com/yeasinrafee/Hungry-Chef-Client",
+    live_link: "https://hungry-chef-client.web.app/",
+  },
+  {
+    name: "KiddToY",
+    description:
+      "Single Page Application. Full Stack CURD Application. Email-Password, Google Authentication. User Can Add Their Toy, User Can Watch their Toys. User Can update or Delete their Toys. Everyone Car see All toys.",
     tags: [
       {
         name: "react",
@@ -159,54 +167,47 @@ const projects = [
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "express",
         color: "pink-text-gradient",
       },
+      {
+        name: "node",
+        color: "green-text-gradient",
+      },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: eliteFightClub,
+    source_code_link: "https://github.com/yeasinrafee/kidd-toy-client",
+    live_link: "https://kidd-toy-client.web.app/",
   },
   {
-    name: "Job IT",
+    name: "EliteFightClub",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Three roles of the user (admin, instructor and student). Admin can handle all the functionalities. An Instructor can create or update a class.Students can also pay for the class and start join the class.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "mongodb",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "express",
         color: "pink-text-gradient",
       },
-    ],
-    image: jobit,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
       {
-        name: "nextjs",
+        name: "node",
+        color: "green-text-gradient",
+      },
+      {
+        name: "JWT",
         color: "blue-text-gradient",
       },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: kiddToy,
+    source_code_link: "https://github.com/yeasinrafee/elite-fight-club-client",
+    live_link: "https://elite-fight-club.web.app/",
   },
 ];
 

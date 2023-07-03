@@ -43,10 +43,10 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
-        soluta blanditiis explicabo voluptatibus adipisci voluptas asperiores
-        quia earum facilis, nemo maiores harum necessitatibus iure hic corrupti
-        inventore tempora odio veritatis.
+        My name is Rafee and I am a full stack developer with a focus on
+        JavaScript and C++. I have experience building and maintaining web
+        applications using JavaScript, as well as solving problems and creating
+        efficient solutions using C++.
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">
